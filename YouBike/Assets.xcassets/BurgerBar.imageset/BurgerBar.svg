@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A6" transform="translate(-149, -213)" fill="#B5CC22">
+            <g id="Group" transform="translate(149, 213)">
+                <path d="M0,2 L0,0 L18,0 L18,2 L0,2 Z M0,7 L18,7 L18,5 L0,5 L0,7 Z M0,12 L18,12 L18,10 L0,10 L0,12 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
