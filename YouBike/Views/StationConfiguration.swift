@@ -66,6 +66,7 @@ final class StationContentView: UIView, UIContentView {
             trailingConstraint,
             heightConstraint
         ])
+        heightConstraint.priority = .defaultHigh
         
         container.addSubview(configuration.countyLabel)
         configuration.countyLabel.translatesAutoresizingMaskIntoConstraints = false

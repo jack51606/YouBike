@@ -39,6 +39,11 @@ public final class StationInformationViewController: UIViewController {
             allStations = await NetworkAPI.shared.fetchData()
             stations = allStations
         }
+        
+        // 點擊空白處時取消鍵盤
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
     
     private func setTitleLabel() {
@@ -189,9 +194,13 @@ extension StationInformationViewController: UITextFieldDelegate {
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         view.endEditing(true)
-        autoCompleteView.alpha = 0
         
         return true
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        autoCompleteView.alpha = 0
     }
     
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -239,4 +248,3 @@ extension StationInformationViewController: UICollectionViewDataSource {
         return cell
     }
 }
-
